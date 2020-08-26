@@ -78,13 +78,13 @@ function Home() {
 			        </Row>
 			 	</Col>
 			 	<Col sm={10}>
-				 	<Row>
+				 	<Row className="mt30">
 				 		{missionData.map((item,i) =>{
 			            return(
-			              <Col sm={3}  key={i} className="mt30">
+			              <Col sm={3}  key={i}>
 			              	<div className="card">
-			              		<div className="mission_img">
-		                          <img src={item.links.mission_patch}/>
+			              		<div className="mission_img mb10">
+		                          <img src={item.links.mission_patch} height='75' width='100'/>
 		                        </div>
 		                        <div className="mission_details">
 									<h5><span>{item.mission_name} #{item.flight_number}</span></h5>
